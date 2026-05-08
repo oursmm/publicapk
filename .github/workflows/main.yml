@@ -1,0 +1,12 @@
+name: Build Android APK
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build APK
+        uses: pavi2410/Webview-to-APK@v1
+        with:
+          title: "Our SMM App"
+          url: "https://oursmm.top"
