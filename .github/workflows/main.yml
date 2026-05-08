@@ -1,13 +1,11 @@
+name: Build APK
 on: [push]
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Source Code
-        uses: actions/checkout@v3
-
-      - name: Build APK
+      - uses: actions/checkout@v3
+      - name: Build
         uses: pavi2410/Webview-to-APK@v1.2
         with:
           title: "Our SMM"
